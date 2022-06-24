@@ -23,7 +23,7 @@ var rootCmd = &cobra.Command{
 			fmt.Fprintln(os.Stderr, err)
 			os.Exit(1)
 		}
-		base := "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ()[]!?$"
+		base := "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ()[]!?$+=/"
 		result := ""
 		for i := 0; i < l; i++ {
 			n, err := rand.Int(rand.Reader, big.NewInt(int64(len(base))))
